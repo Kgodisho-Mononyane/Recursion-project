@@ -1,3 +1,4 @@
+import {fibs, fibsRec} from "../"
 //const fibonacci = require('./fibonacci');
 
 test('iterative fibonacci function works', () => {
