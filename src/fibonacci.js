@@ -1,4 +1,4 @@
-function fibs(num) {
+export function fibs(num) {
     let array = []
     for (let i = 0; i < num; i++) {
 
@@ -10,7 +10,7 @@ function fibs(num) {
 }
 
 
-function fibsRec(num) {
+export function fibsRec(num) {
     if (num == 0) {
         return [];
     } else if (num == 1) {
@@ -26,15 +26,6 @@ function fibsRec(num) {
 
         return array;
     }
-    
-
-    // } else {
-    //     for (let i = 0; i < num; i++) {
-    //         let fib = fibsRec(num - 1) + fibsRec(num - 2);
-    //         array.push(fib);
-    //     }
-    // }
-    // return array;
 }
 
 console.log(fibsRec(5))
